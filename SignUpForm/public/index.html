@@ -7,25 +7,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="description" content="Sign up for free">
   <link rel="stylesheet" href="assets/styles/main.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <title>Sign Up Form</title>
 </head>
 
-<body>
-  <h1>Learn to code by watching others</h1>
-  <p>See how experienced developers solve problens in real-time.
-    Watching scripted tutorials is great, but understanding how developers think is invaluable.
-  </p>
-  <section>
-    <em>Try it free 7 days</em> then $20/mo. thereafter
-  </section>
-  <form action="/" method="post">
-    <input name="firstname" aria-label="enter your first name" type="text" required placeholder="First Name">
-    <input name="lastname" aria-label="enter your last name" type="text" required placeholder="Last Name">
-    <input name="email" aria-label="enter your e-mail address" type="email" required placeholder="Email Address">
-    <input name="password" aria-label="enter a secure password" type="password" required placeholder="Password">
-    <button>CLAIM YOUR FREE TRIAL</button>
-    <p>By clicking the button, you are agreeing to our <a href="/">Terms and Services</a> </p>
-  </form>
+<body class="bg-primary-red row">
+  <div class="block text-white text-center-sm">
+    <h1>Learn to code by watching others</h1>
+    <p>See how experienced developers solve problens in real-time.
+      Watching scripted tutorials is great, but understanding how developers think is invaluable.
+    </p>
+  </div>
+  <div class="block-half">
+    <section class="button shadow bg-accent space-between-vertical round-corners">
+      <em class="highlight">Try it free 7 days</em> then $20/mo. thereafter
+    </section>
+    <form action="/" method="post" class="container shadow round-corners space-between-vertical">
+      <input name="firstname" aria-label="enter your first name" type="text" required class="form-field space-between-vertical" placeholder="First Name" >
+      <input name="lastname" aria-label="enter your last name" type="text" required class="form-field space-between-vertical" placeholder="Last Name">
+      <input name="email" aria-label="enter your e-mail address" type="email" required class="form-field space-between-vertical" placeholder="Email Address">
+      <input name="password" aria-label="enter a secure password" type="password" required class="form-field space-between-vertical" placeholder="Password">
+      <button class="button highlight bg-primary-green space-between-vertical">CLAIM YOUR FREE TRIAL</button>
+      <p class="text-center">By clicking the button, you are agreeing to our <a href="/" class="highlight">Terms and
+          Services</a>
+      </p>
+    </form>
+  </div>
 </body>
 
 </html>
