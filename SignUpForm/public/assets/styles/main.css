@@ -1,0 +1,11 @@
+body {
+  background-image: url(/assets/images/bg-intro-mobile.png);
+  background-size: cover;
+  background-color: hsl(0, 100%, 74%);
+}
+
+@media screen and (min-width: 375px) {
+body {
+  background-image: url(/assets/images/bg-intro-desktop.png);
+}
+}
