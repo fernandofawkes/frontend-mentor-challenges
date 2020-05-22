@@ -22,17 +22,32 @@
     <section class="button shadow bg-accent space-between-vertical round-corners">
       <em class="highlight">Try it free 7 days</em> then $20/mo. thereafter
     </section>
-    <form action="/" method="post" class="container shadow round-corners space-between-vertical">
-      <input name="firstname" aria-label="enter your first name" type="text" required class="form-field space-between-vertical" placeholder="First Name" >
+    <form action="/" method="post" class=" container shadow round-corners space-between-vertical">
+      <input name="firstname" aria-label="enter your first name" type="text" required class="form-field space-between-vertical" placeholder="First Name">
+      <p class="validation-message">First Name cannot be empty</p>
       <input name="lastname" aria-label="enter your last name" type="text" required class="form-field space-between-vertical" placeholder="Last Name">
+      <p class="validation-message">Last Name cannot be empty</p>
       <input name="email" aria-label="enter your e-mail address" type="email" required class="form-field space-between-vertical" placeholder="Email Address">
+      <p class="validation-message">Looks like this is not an email</p>
       <input name="password" aria-label="enter a secure password" type="password" required class="form-field space-between-vertical" placeholder="Password">
-      <button class="button highlight bg-primary-green space-between-vertical">CLAIM YOUR FREE TRIAL</button>
+      <p class="validation-message">Password cannot be empty</p>
+      <button type="submit" class="button highlight bg-primary-green space-between-vertical">CLAIM YOUR FREE TRIAL</button>
       <p class="text-center">By clicking the button, you are agreeing to our <a href="/" class="highlight">Terms and
           Services</a>
       </p>
     </form>
   </div>
+  <script>
+    const form = document.querySelector(`form`);
+    const button = document.querySelector(`button[type='submit']`);
+    console.log(form);
+
+    button.onclick = function(event) {
+      console.log(event);
+
+      form.classList.add(`validate`);
+    };
+  </script>
 </body>
 
 </html>
