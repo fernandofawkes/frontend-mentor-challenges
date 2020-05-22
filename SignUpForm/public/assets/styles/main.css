@@ -124,6 +124,9 @@ body {
 .validate .space-between-vertical + .validation-message + .space-between-vertical {
   margin-top: 0;
 }
+.validate .space-between-vertical:valid + .validation-message + .space-between-vertical {
+  margin-top: 25px;
+}
 
 @media screen and (min-width: 375px) {
   body {
